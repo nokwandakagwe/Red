@@ -28,7 +28,7 @@
 
       const formData = new FormData();
       formData.append('file', imageInput.files[0]);
-      formData.append('upload_preset', 'Reddragon-dfs'); // Replace with your Cloudinary upload preset
+      formData.append('upload_preset', 'ml_default'); // Replace with your Cloudinary upload preset
 
       try {
         const response = await fetch('https://api.cloudinary.com/v1_1/djfec0xtx/image/upload', {
